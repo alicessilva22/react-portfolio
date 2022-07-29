@@ -1,7 +1,9 @@
 import React from "react";
 import Project from "./Project";
-import Book from "../img/BookNook.png"
-import Food from "../img/Food&Drinks.png"
+import Book from "../img/BookNook.png";
+import Food from "../img/Food&Drinks.png";
+import Password from "../img/Password.png";
+import Scheduler from "../img/Scheduler.png";
 
 const projects = [
   {
@@ -22,37 +24,20 @@ const projects = [
   },
   {
     id: 2,
-    title: "Food&Drink",
-    image: "/img/techtopics.png",
-    description: "You can search for Recipe for different drinks or ingredients to make a delicious meal.",
-    repo: "https://github.com/VarunTanna/ProjectOne",
-    live: "https://varuntanna.github.io/ProjectOne",
+    title: "Password Generator",
+    image: Password,
+    description: "Generate a secure password based on your choices of inputs.",
+    repo: "https://github.com/alicessilva22/Password-Generator",
+    live: "https://alicessilva22.github.io/Password-Generator/",
   },
   {
     id: 3,
-    title: "Food&Drink",
-    image: "/img/techtopics.png",
-    description: "You can search for Recipe for different drinks or ingredients to make a delicious meal.",
-    repo: "https://github.com/VarunTanna/ProjectOne",
-    live: "https://varuntanna.github.io/ProjectOne",
+    title: "Work Day Scheduler",
+    image: Scheduler,
+    description: "A simple calendar app for scheduling your work day, powered by MomentJS.",
+    repo: "https://alicessilva22.github.io/Calendar-Module05/",
+    live: "https://alicessilva22.github.io/Calendar-Module05/",
   },
-  {
-    id: 4,
-    title: "Food&Drink",
-    image: "/img/techtopics.png",
-    description: "You can search for Recipe for different drinks or ingredients to make a delicious meal.",
-    repo: "https://github.com/VarunTanna/ProjectOne",
-    live: "https://varuntanna.github.io/ProjectOne",
-  },
-  {
-    id: 5,
-    title: "Food&Drink",
-    image: "/img/techtopics.png",
-    description: "You can search for Recipe for different drinks or ingredients to make a delicious meal.",
-    repo: "https://github.com/VarunTanna/ProjectOne",
-    live: "https://varuntanna.github.io/ProjectOne",
-  },
-  
 ];
 
 function Portfolio() {
@@ -64,5 +49,3 @@ function Portfolio() {
 }
 
 export default Portfolio;
-
-

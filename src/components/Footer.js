@@ -4,7 +4,6 @@ import { Linkedin } from 'react-bootstrap-icons';
 
 
 const style = {
-  backgroundColor: "#grey",
   borderTop: "1px solid #E7E7E7",
   textAlign: "center",
   padding: "20px",
@@ -15,13 +14,15 @@ const style = {
   width: "100%"
 };
 
-export default function Footer() {
+function Footer() {
   return (
     <div>
-      <div style={style}>Copyright 2022 
-      <a href="https://github.com/alicessilva22"><Github /></a> 
-      <a href="https://www.linkedin.com/in/alice-silva-b698791ab/"><Linkedin /></a> 
+      <div style={style}>Copyright 2022
+        <a href="https://github.com/alicessilva22"><Github /></a>
+        <a href="https://www.linkedin.com/in/alice-silva-b698791ab/"><Linkedin /></a>
       </div>
     </div>
   );
 }
+
+export default Footer;

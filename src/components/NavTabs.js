@@ -3,7 +3,7 @@ import React from "react";
 function NavTabs(props) {
   const tabs = ["About", "Portfolio", "Contact", "Resume"];
   return (
-    <div className="tabs">
+    <div>
       <ul className="nav nav-tabs">
         {tabs.map((tab) => (
           <li

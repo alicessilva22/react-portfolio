@@ -10,10 +10,10 @@ function Contact() {
 
         if (setName(value)) {
             return name === 'name'
-        } 
+        }
         if (setEmail(value)) {
             return name === 'email'
-        } 
+        }
         if (setMessage(value)) {
             return name === 'message'
         }
@@ -49,9 +49,7 @@ function Contact() {
                     type="text"
                     placeholder="message"
                 />
-                <button type="button" onClick={handleFormSubmit}>
-                    Submit
-                </button>
+                <button type="button" onClick={handleFormSubmit}>Submit</button>
             </form>
         </div>
     );
