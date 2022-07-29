@@ -1,5 +1,5 @@
 import React from "react";
-import { Github, Link } from 'react-bootstrap-icons';
+import { Github } from 'react-bootstrap-icons';
 import { Linkedin } from 'react-bootstrap-icons';
 
 

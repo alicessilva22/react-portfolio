@@ -1,60 +1,30 @@
-import React from 'react';
+import React from "react";
 
-
-function NavTabs({ currentPage, handlePageChange }) {
+function NavTabs(props) {
+  const tabs = ["About", "Portfolio", "Contact", "Resume"];
   return (
-    <ul className="nav nav-tabs">
-      <li className="nav-item">
-        <a
-          href="#home"
-          onClick={() => handlePageChange('Home')}
-
-          className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
-        >
-          Home
-        </a>
-      </li>
-      <li className="nav-item">
-        <a
-          href="#about"
-          onClick={() => handlePageChange('About')}
-
-          className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
-        >
-          About
-        </a>
-      </li>
-      <li className="nav-item">
-        <a
-          href="#projects"
-          onClick={() => handlePageChange('Projects')}
-
-          className={currentPage === 'Blog' ? 'nav-link active' : 'nav-link'}
-        >
-          Projects
-        </a>
-      </li>
-      <li className="nav-item">
-        <a
-          href="#contact"
-
-          onClick={() => handlePageChange('Contact')}
-          className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
-        >
-          Contact
-        </a>
-      </li>
-      <li className="nav-item">
-        <a
-          href="#resume"
-
-          onClick={() => handlePageChange('Resume')}
-          className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
-        >
-          Resume
-        </a>
-      </li>
-    </ul>
+    <div className="tabs">
+      <ul className="nav nav-tabs">
+        {tabs.map((tab) => (
+          <li
+            className={
+              props.currentPage === tab ? "nav-item is-active" : "nav-item"
+            }
+            key={tab}
+          >
+            <a
+              href={"#" + tab.toLowerCase()}
+              onClick={() => props.handlePageChange(tab)}
+              className={
+                props.currentPage === tab ? "nav-link active" : "nav-link"
+              }
+            >
+              {tab}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }
 
