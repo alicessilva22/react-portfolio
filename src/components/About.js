@@ -1,4 +1,5 @@
 import React from 'react';
+import Profile from '../img/profile.jpg';
 
 
 export default function About() {
@@ -8,7 +9,7 @@ export default function About() {
       <p>
         Thanks for visiting my React Portfolio Project Page.
       </p>
-      {/* <img src {} */}
+      <img src={ Profile } alt="Alice"/>
     </div>
   );
 }
