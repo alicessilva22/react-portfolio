@@ -1,8 +1,20 @@
 import React from 'react';
 
+const style = {
+  backgroundColor: "#gray",
+  borderTop: "1px solid #E7E7E7",
+  textAlign: "center",
+  padding: "20px",
+  position: "fixed",
+  right: "0",
+  top: "0",
+  height: "60px",
+  width: "100%"
+};
+
 function NavTabs({ currentPage, handlePageChange }) {
   return (
-    <ul className="nav nav-tabs">
+    <ul style={style} className="nav nav-tabs">
       <li className="nav-item">
         <a
           href="#home"
