@@ -2,8 +2,7 @@ import React from "react";
 
 function Project(props) {
   return (
-    <div>
-      <div className="columns is-desktop is-justify-content-center is-flex-wrap-wrap is-flex-direction-row">
+    <div className="card-group">
         {props.projects.map((project) => (
             <div className="card">
               <img className="card-image" src={project.image} alt="Project" />
@@ -19,7 +18,7 @@ function Project(props) {
                   {project.description}
                   <br />
                   <br />
-                    <footer className="card-footer">
+                    <footer className="card-footer" position="fixed">
                       <a
                         href={project.repo}
                         className="card-footer-item"
@@ -40,7 +39,6 @@ function Project(props) {
             </div>
           </div>
         ))}
-      </div>
     </div>
   );
 }

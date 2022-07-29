@@ -1,6 +1,7 @@
 import React from "react";
 import Project from "./Project";
 import Book from "../img/BookNook.png"
+import Food from "../img/Food&Drinks.png"
 
 const projects = [
   {
@@ -14,6 +15,38 @@ const projects = [
   {
     id: 1,
     title: "Food&Drink",
+    image: Food,
+    description: "You can search for Recipe for different drinks or ingredients to make a delicious meal.",
+    repo: "https://github.com/VarunTanna/ProjectOne",
+    live: "https://varuntanna.github.io/ProjectOne",
+  },
+  {
+    id: 2,
+    title: "Food&Drink",
+    image: "/img/techtopics.png",
+    description: "You can search for Recipe for different drinks or ingredients to make a delicious meal.",
+    repo: "https://github.com/VarunTanna/ProjectOne",
+    live: "https://varuntanna.github.io/ProjectOne",
+  },
+  {
+    id: 3,
+    title: "Food&Drink",
+    image: "/img/techtopics.png",
+    description: "You can search for Recipe for different drinks or ingredients to make a delicious meal.",
+    repo: "https://github.com/VarunTanna/ProjectOne",
+    live: "https://varuntanna.github.io/ProjectOne",
+  },
+  {
+    id: 4,
+    title: "Food&Drink",
+    image: "/img/techtopics.png",
+    description: "You can search for Recipe for different drinks or ingredients to make a delicious meal.",
+    repo: "https://github.com/VarunTanna/ProjectOne",
+    live: "https://varuntanna.github.io/ProjectOne",
+  },
+  {
+    id: 5,
+    title: "Food&Drink",
     image: "/img/techtopics.png",
     description: "You can search for Recipe for different drinks or ingredients to make a delicious meal.",
     repo: "https://github.com/VarunTanna/ProjectOne",
@@ -24,10 +57,7 @@ const projects = [
 
 function Portfolio() {
   return (
-    <div>
-      <p className="content is-medium">Portfolio</p>
-      <hr />
-
+    <div display="flex">
       <Project projects={projects} />
     </div>
   );
